@@ -13,28 +13,31 @@
 .top-wrap .nav{width: 400px; font-size: 1.25em;}
 .top-wrap .nav > .navs{width: 25%}
 
-.top-wrap2{display: flex; justify-content: space-between; height: 100px; align-items: center; color: #f8f8f8; border: 1px solid red;}
+.top-wrap2{display: flex; justify-content: space-between; height: 100px; align-items: center; color: #f8f8f8;}
 .logo >img{width: 70px}
 .top-wrap2 .nav{width: 400px; font-size: 1.25em;}
 .top-wrap2 .nav > .navs{width: 25%}
 
 
-.header-wrapper{ position: relative; height: 100vh;}
+.header-wrapper{ position: relative; height: 100vh; /* overflow-x: scroll; *//*  display: flex; flex-wrap: wrap; */
+background-image: url(../img/bg1.jpg);
+background-attachment: fixed }
 
-.header-wrapper .main-title{margin: 6em 0; font-family: 'Playfair Display', serif;}
+.header-wrapper .main-title{margin: 6em 0; font-family: 'Playfair Display', serif; }
 .header-wrapper .main-title .title > h2{font-size: 5em;}
 .header-wrapper .main-title .title > h2 > .t{font-size: 1.25em;}
 .header-wrapper .main-title .title > h2 > .r{color: #fe2827;}
 
 .header-wrapper .pic{position: absolute; right: 0; top: 240px; display: flex; flex-direction: column; height: 600px;}
 .header-wrapper .pic > img{width: 300px; height: 500px;}
-.header-wrapper .pic .scroll{position: absolute;bottom: 0; right: 40px; font-size: 1.5em;  }
-.header-wrapper .pic .scroll > span{padding: 0.5em; font-family: 'Mukta', sans-serif;font-family: 'Nanum Pen Script', cursive; font-style: italic;}
+.header-wrapper .pic .scroll{position: absolute;bottom: 0; right: 40px; font-size: 1.5em;}
+.header-wrapper .pic .scroll > span{padding: 0.5em; font-family: 'Mukta', sans-serif;font-family: 'Nanum Pen Script', cursive; font-style: italic; }
+.header-wrapper .pic .scroll > i{cursor: pointer;}
 
 .header-wrapper .Loading-wrap{position: absolute;left: 0; bottom: 0; height: 30px; width: 100%}
 .header-wrapper .Loading-wrap .Loading-bar{position: absolute;bottom: 0; background-color: #fe2827; width: 25%;  height: 100%;}
 
-.project{background-color: #1e1e1e; height: 100vh; position: relative; /* width: 200%; */ }
+.project{background-color: #1e1e1e; height: 100vh;}
 .project .pjv-wrap{display: flex; height: 300px;}
 .project .pjv-wrap img{display: none;}
 .project .pjv-wrap .pjv1> img{position: absolute; left: 100px; top: 300px; width: 500px; height: 400px;}
@@ -45,8 +48,8 @@
 
 .about-wrapper { height: 100vh; position: relative; width: 100%;}
 .about-wrapper .about .about-title .about-h{}
-.about-wrapper .about .about-title .about-h > h2{font-size: 5em; font-family: 'Playfair Display', serif; padding: 0.5em 0;}
-.about-wrapper .about .about-title .about-s > h2{font-size: 5em; font-family: 'Playfair Display', serif; padding: 0.5em 0;}
+.about-wrapper .about .about-title .about-h > h2{font-size: 4.5em; font-family: 'Playfair Display', serif; padding: 1em 0 0.5em 0;}
+.about-wrapper .about .about-title .about-s > h2{font-size: 4.5em; font-family: 'Playfair Display', serif; padding: 0.5em 0 0.5em 0;}
 .about-wrapper .about .about-title .about-h > p{font-size: 3em; font-weight: 350;}
 .about-wrapper .about .about-title .about-s .Launage .img-wrap >li >img{ width: 50px; height: 50px;}
 .about-wrapper .about .about-title .about-s .Web-skills .img-wrap >li >img{ width: 50px; height: 50px;}
