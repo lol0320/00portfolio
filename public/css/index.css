@@ -20,8 +20,8 @@
 
 
 .header-wrapper{ position: relative; height: 100vh; /* overflow-x: scroll; *//*  display: flex; flex-wrap: wrap; */
-background-image: url(../img/bg1.jpg);
-background-attachment: fixed }
+background-image: url(../img/BG-Z.jpg);
+background-attachment: fixed;}
 
 .header-wrapper .main-title{margin: 6em 0; font-family: 'Playfair Display', serif; }
 .header-wrapper .main-title .title > h2{font-size: 5em;}
@@ -37,9 +37,9 @@ background-attachment: fixed }
 .header-wrapper .Loading-wrap{position: absolute;left: 0; bottom: 0; height: 30px; width: 100%}
 .header-wrapper .Loading-wrap .Loading-bar{position: absolute;bottom: 0; background-color: #fe2827; width: 25%;  height: 100%;}
 
-.project{background-color: #1e1e1e; height: 100vh;}
+.project{background-color: #1e1e1e; height: 100vh; width: 200%; position: relative;}
 .project .pjv-wrap{display: flex; height: 300px;}
-.project .pjv-wrap img{display: none;}
+.project .pjv-wrap img{/* display: none; */}
 .project .pjv-wrap .pjv1> img{position: absolute; left: 100px; top: 300px; width: 500px; height: 400px;}
 .project .pjv-wrap .pjv2> img{position: absolute; left: 1000px; top: 500px; width: 500px; height: 400px;}
 .project .pjv-wrap .pjv3> img{position: absolute; left: 2000px; top: 500px; width: 500px; height: 400px;}
@@ -51,15 +51,15 @@ background-attachment: fixed }
 .about-wrapper .about .about-title .about-h > h2{font-size: 4.5em; font-family: 'Playfair Display', serif; padding: 1em 0 0.5em 0;}
 .about-wrapper .about .about-title .about-s > h2{font-size: 4.5em; font-family: 'Playfair Display', serif; padding: 0.5em 0 0.5em 0;}
 .about-wrapper .about .about-title .about-h > p{font-size: 3em; font-weight: 350;}
-.about-wrapper .about .about-title .about-s .Launage .img-wrap >li >img{ width: 50px; height: 50px;}
-.about-wrapper .about .about-title .about-s .Web-skills .img-wrap >li >img{ width: 50px; height: 50px;}
-.about-wrapper .about .about-title .about-s .FrameWork .img-wrap >li >img{ width: 50px; height: 50px;}
-.about-wrapper .about .about-title .about-s .Web-skills >li >img{ width: 50px; height: 50px;}
-.about-wrapper .about .about-title .about-s .FrameWork >li >img{ width: 50px; height: 50px;}
+.about-wrapper .about .about-title .about-s .Pubilshing .img-wrap >li >img{ width: 50px; height: 50px;}
+.about-wrapper .about .about-title .about-s .FrontEnd .img-wrap >li >img{ width: 50px; height: 50px;}
+.about-wrapper .about .about-title .about-s .BackEnd .img-wrap >li >img{ width: 50px; height: 50px;}
+.about-wrapper .about .about-title .about-s .FrontEnd >li >img{ width: 50px; height: 50px;}
+.about-wrapper .about .about-title .about-s .BackEnd >li >img{ width: 50px; height: 50px;}
 .about-wrapper .about .about-title .about-s .about-wrap{display: flex; }
-.about-wrapper .about .about-title .about-s .Launage{display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.about-wrapper .about .about-title .about-s .Web-skills{display: flex; flex-direction: column; justify-content: center; align-items: center;}
-.about-wrapper .about .about-title .about-s .FrameWork{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.about-wrapper .about .about-title .about-s .Pubilshing{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.about-wrapper .about .about-title .about-s .FrontEnd{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.about-wrapper .about .about-title .about-s .BackEnd {display: flex; flex-direction: column; justify-content: center; align-items: center;}
 .about-wrapper .about .about-title .about-s .img-wrap{display: flex;}
 .about-wrapper .about  span{font-size: 1.75em; padding: 1em 0 2.75em 0;}
 .about-wrapper .about .about-s ul{border-right: 1px solid #777; flex: 33.3333%;}

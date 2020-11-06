@@ -1,7 +1,7 @@
-scrollVert();
+ scrollVert();
 var scrollLeft=0;
 function scrollVert() {
-  $('html, body, *').off('mousewheel').mousewheel(function(e, delta) {
+  $('header-wrapper, project, *').off('mousewheel').mousewheel(function(e, delta) {
     this.scrollTop -= (delta * 40);
     e.preventDefault();
     setTimeout(function() {
@@ -10,6 +10,7 @@ function scrollVert() {
     }, 0)
   });
 }
+
 function scrollHoriz() {
   $('html, body, *').off('mousewheel').mousewheel(function(e, delta) {
     this.scrollLeft -= (delta * 40);
@@ -19,13 +20,6 @@ function scrollHoriz() {
       if (scrollLeft == 0) scrollVert();
     }, 0)
   });
-}
+} 
 
 
-	$('html').each(function (){
-  	var _width = $(this).width(),
-    		_length = $(this).length
-      // _index = $(this).find('.on').index();
-                
-    $('.header-wrapper').scrollLeft((_width/_length) * _index);
-  });
