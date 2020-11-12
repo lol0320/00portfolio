@@ -13,23 +13,22 @@ html, body {width: 100%; height: 100vh; overflow: hidden;}
 .active{color: #fe2827;}
 .wit{color: #f8f8f8;}
 
-.top-wrap{display: flex; justify-content: space-between; height: 100px; align-items: center; width: 100%;}
+.top-wrap{display: flex; justify-content: space-between; height: 100px; align-items: center; width: 100%; position: fixed; left: 0; top: 0; padding: 70px 100px;}
 .logo >img{width: 70px}
 .top-wrap .nav{width: 400px; font-size: 1.25em;}
 .top-wrap .nav > .navs{width: 25%}
 
-.top-wrap2{display: flex;  height: 100px; align-items: center; color: #f8f8f8;}
-.top-wrap3{display: flex; justify-content: flex-end; height: 100px; align-items: center; color: #f8f8f8;}
+.top-wrap2{display: flex; justify-content: space-between; height: 100px; align-items: center; color: #f8f8f8;}
 .logo >img{width: 70px}
-.top-wrap3 .nav{width: 400px; font-size: 1.25em;}
-.top-wrap3 .nav > .navs{width: 25%}
+.top-wrap2 .nav{width: 400px; font-size: 1.25em;}
+.top-wrap2 .nav > .navs{width: 25%}
 
 
 .header-wrapper{ position: relative; height: 100vh; /* overflow-x: scroll; *//*  display: flex; flex-wrap: wrap; */
 background-image: url(../img/BG-Z.jpg);
 background-attachment: fixed;}
 
-.header-wrapper .main-title{margin: 6em 0; font-family: 'Playfair Display', serif; }
+.header-wrapper .main-title{margin: 15em 0; font-family: 'Playfair Display', serif; }
 .header-wrapper .main-title .title > h2{font-size: 5em;}
 .header-wrapper .main-title .title > h2 > .t{font-size: 1.25em;}
 .header-wrapper .main-title .title > h2 > .r{color: #fe2827;}
@@ -43,22 +42,18 @@ background-attachment: fixed;}
 .header-wrapper .Loading-wrap{position: absolute;left: 0; bottom: 0; height: 30px; width: 100%}
 .header-wrapper .Loading-wrap .Loading-bar{position: absolute;bottom: 0; background-color: #fe2827; width: 25%;  height: 100%;}
 
-.pro-wrap {background-color: #1e1e1e; height: 100vh; width: 200%; position: relative; display: flex;}
-.pro-wrap .project .top-wrap2 {justify-content: space-between;}
-.pro-wrap .project  h1{color: #ffff; z-index: 9999; font-family: 'Playfair Display', serif; font-size: 6em; position: absolute;}
-.pro-wrap .project .pjv-wrap{display: flex;}
-.pro-wrap .project .pjv-wrap img{/* display: none; */ position: absolute;}
-.pro-wrap .project1 {width: 100%; height: 100%;}
-.pro-wrap .project2 {width: 100%; height: 100%;}
-.pro-wrap .project1 .pjv-wrap .pu{left: 350px; top: 630px; width: 500px; height: 400px;}
-.pro-wrap .project1 .pjv-wrap .fr{left: 1250px; top: 430px; width: 500px; height: 400px;}
-.pro-wrap .project2 .pjv-wrap .ba{left: 220px; top: 530px; width: 500px; height: 400px;}
-.pro-wrap .project2 .pjv-wrap .da{left: 1200px; top: 430px; width: 500px; height: 400px;}
-.pro-wrap .project1 .pjv-wrap .pjv1> img{left: 250px; top: 300px; width: 500px; height: 400px;}
-.pro-wrap .project1 .pjv-wrap .pjv2> img{left: 1200px; top: 500px; width: 500px; height: 400px;}
-.pro-wrap .project2 .pjv-wrap .pjv3> img{left: 200px; top: 200px; width: 500px; height: 400px;}
-.pro-wrap .project2 .pjv-wrap .pjv4> img{left: 1100px; top: 500px; width: 500px; height: 400px;}
-
+.project{background-color: #1e1e1e; height: 100vh; width: 100%; position: relative;}
+.project .pjv-wrap{display: flex; height: 300px;}
+.project .pjv-wrap img{/* display: none; */ position: absolute;}
+.project .pjv-wrap h1{color: #ffff; z-index: 9999; font-family: 'Playfair Display', serif; font-size: 6em; position: absolute;}
+.project .pjv-wrap .pu{left: 350px; top: 630px; width: 500px; height: 400px;}
+.project .pjv-wrap .fr{left: 1250px; top: 430px; width: 500px; height: 400px;}
+.project .pjv-wrap .ba{left: 220px; top: 530px; width: 500px; height: 400px;}
+.project .pjv-wrap .da{left: 1200px; top: 430px; width: 500px; height: 400px;}
+.project .pjv-wrap .pjv1> img{left: 250px; top: 300px; width: 500px; height: 400px;}
+.project .pjv-wrap .pjv2> img{left: 1200px; top: 500px; width: 500px; height: 400px;}
+.project .pjv-wrap .pjv3> img{left: 200px; top: 200px; width: 500px; height: 400px;}
+.project .pjv-wrap .pjv4> img{left: 1100px; top: 500px; width: 500px; height: 400px;}
 
 .about-wrapper { height: 100vh; position: relative; width: 100%;}
 .about-wrapper .about .about-title .about-h{}
