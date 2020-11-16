@@ -5,33 +5,25 @@
 /* font-family: 'Mukta', sans-serif;font-family: 'Nanum Pen Script' */
 
 html, body {width: 100%; height: 100vh; overflow: hidden;}
-.main-wrapper {width: 400%; display: flex; position: absolute; top: 0; left: 0;}
-.main-wrapper .page-wrapper {flex: 25% 0 0;}
 
 
-.wrapper{max-width: 1700px; margin: auto;}
+
+.wrapper{max-width: 1550px; margin: auto;}
 .active{color: #fe2827;}
 .wit{color: #f8f8f8;}
 
-.top-wrap{display: flex; justify-content: space-between; height: 100px; align-items: center; width: 100%; position: fixed; left: 0; top: 0; padding: 70px 100px;}
-.logo >img{width: 70px}
-.top-wrap .nav{width: 400px; font-size: 1.25em;}
-.top-wrap .nav > .navs{width: 25%}
+.header-wrapper .top-wrap{display: flex; justify-content: space-between; height: 100px; align-items: center; width: 100%;}
+.header-wrapper .logo >img{width: 70px}
+.header-wrapper .top-wrap .menu > ul{width: 400px; font-size: 1.25em; display: none;}
+.header-wrapper .top-wrap .menu > i{font-size: 1.75em;}
+.header-wrapper .top-wrap .menu .nav > .navs{width: 25%;}
 
-.top-wrap2{display: flex; justify-content: space-between; height: 100px; align-items: center; color: #f8f8f8;}
-.logo >img{width: 70px}
-.top-wrap2 .nav{width: 400px; font-size: 1.25em;}
-.top-wrap2 .nav > .navs{width: 25%}
-
-
-.header-wrapper{ position: relative; height: 100vh; /* overflow-x: scroll; *//*  display: flex; flex-wrap: wrap; */
-background-image: url(../img/BG-Z.jpg);
-background-attachment: fixed;}
+.header-wrapper{height: 100vh; /* overflow-x: scroll; *//*  display: flex; flex-wrap: wrap; */}
 
 .header-wrapper .main-title{margin: 15em 0; font-family: 'Playfair Display', serif; }
-.header-wrapper .main-title .title > h2{font-size: 5em;}
+.header-wrapper .main-title .title > h2{font-size: 5em; color: #48959e;}
 .header-wrapper .main-title .title > h2 > .t{font-size: 1.25em;}
-.header-wrapper .main-title .title > h2 > .r{color: #fe2827;}
+.header-wrapper .main-title .title > h2 > .r{}
 
 .header-wrapper .pic{position: absolute; right: 0; top: 240px; display: flex; flex-direction: column; height: 600px;}
 .header-wrapper .pic > img{width: 300px; height: 500px;}
