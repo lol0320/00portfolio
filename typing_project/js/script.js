@@ -1,10 +1,10 @@
 var typingBool = false; 
 var typingIdx=0; 
 var liIndex = 0;
-var liLength = $(".typing-txt>ul>li").length;
+var liLength = $(".typing-txt").length;
 
 
-var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+var typingTxt = $(".typing-txt").eq(liIndex).text(); 
 typingTxt=typingTxt.split(""); 
 if(typingBool==false){ 
     typingBool=true; 
@@ -24,7 +24,7 @@ function typing(){
      
         typingIdx=0;
         typingBool = false; 
-        typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
+        typingTxt = $(".typing-txt").eq(liIndex).text(); 
        
          clearInterval(tyInt);
          setTimeout(function(){
