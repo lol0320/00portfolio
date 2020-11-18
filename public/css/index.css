@@ -9,12 +9,12 @@
 */
 
 
-html, body {width: 100%; height: 100vh; overflow: hidden;}
+html, body {width: 100%;}
 
 
 
 .wrapper{max-width: 1550px; margin: auto;}
-.active{color: #fe2827;}
+.active{color: #304345;}
 .wit{color: #f8f8f8;}
 
 .header-wrapper .top-wrap{display: flex; justify-content: space-between; height: 180px; align-items: center; width: 100%;}
