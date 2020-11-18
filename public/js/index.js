@@ -94,3 +94,18 @@ function typing(){
          },2000);
     } 
 }  
+
+
+var docStyle = document.documentElement.style;
+
+document.addEventListener('mousemove', function(e) {
+  docStyle.setProperty('--mouse-x', e.clientX);
+  docStyle.setProperty('--mouse-y', e.clientY);
+});
+
+
+$(".header-wrapper .bar").click(function () {
+	$(".menu-slide").fadeIn(500)});
+
+$(".menu-slide .bar").click(function () {
+	$(".menu-slide").fadeOut(500)});

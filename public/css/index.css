@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@500;600;700&display=swap');
 /* font-family: 'Playfair Display', serif */
 /* font-family: 'Mukta', sans-serif;font-family: 'Nanum Pen Script' */
 /* color: #304345 -검정
@@ -17,32 +19,48 @@ html, body {width: 100%;}
 .active{color: #304345;}
 .wit{color: #f8f8f8;}
 
+.header-wrapper{position: relative;}
 .header-wrapper .top-wrap{display: flex; justify-content: space-between; height: 180px; align-items: center; width: 100%;}
 .header-wrapper .logo >img{width: 70px}
 .header-wrapper .top-wrap .menu > ul{width: 400px; font-size: 1.25em; display: none;}
 .header-wrapper .top-wrap .menu .bar{display: flex; justify-content: center; align-items: center; } 
-.header-wrapper .top-wrap .menu .bar .bar-txt{margin-right: 15px; font-family: 'Playfair Display', serif; font-size: 1.25em;font-weight: 700; color: #292929; }
+.header-wrapper .top-wrap .menu .bar .bar-txt{margin-right: 15px; font-family: 'Domine', serif; font-size: 1.25em;font-weight: 700; color: #292929; }
 .header-wrapper .top-wrap .menu .bar >ul{display: flex; flex-direction: column; justify-content: right;}
 .header-wrapper .top-wrap .menu .bar >ul .s1{width: 30px; border-bottom: 3px solid #292929; margin-bottom: 7px; }
 .header-wrapper .top-wrap .menu .bar >ul .s2{ width: 15px; border-bottom: 3px solid #292929;}
 .header-wrapper .top-wrap .menu .bar:hover >ul .s2{ width: 30px; border-bottom: 3px solid #292929; transition: 0.3s;}
 
-.menu-slide{width: 100%; height: 100vh; background-color: #ece3de;}
 
-.header-wrapper{height: 100vh; /* overflow-x: scroll; *//*  display: flex; flex-wrap: wrap; */ background-color: #fffddd;}
+.header-wrapper{height: 100vh; /* overflow-x: scroll; *//*  display: flex; flex-wrap: wrap; */ background-color: #f8f7f0;}
 
-.header-wrapper .main-title{margin-top: 5em ; font-family: 'Playfair Display', serif; display: flex; justify-content: space-between; align-items: center;}
-.header-wrapper .main-title .title > h2{ height: 450px; font-size: 4.75em; color: #304345; font-weight: 600; line-height: 1.1;}
+.header-wrapper .main-title{margin-top: 5em ; font-family: 'Domine', serif; display: flex; justify-content: space-between; align-items: center;}
+.header-wrapper .main-title .title > h2{ height: 450px; font-size: 4.75em; color: #304345; font-weight: 600; line-height: 1.2;}
 .header-wrapper .main-title .title > h2 > .t{font-size: 1.25em; color: #f69393;}
 
 .header-wrapper .cont{position: relative; margin-left: 5em;}
-.header-wrapper .cont-bar{position: absolute; width: 6em; height: 6em; border: 5px solid #f69393; border-radius: 50%;}
-.header-wrapper .cont-bar >p{position: absolute; top: 28%; left: -30%; width: 9em; font-size: 1.75em;font-family: 'Playfair Display', serif; font-weight: 700; color: #50959e;}
+.header-wrapper .cont-bar{position: absolute; margin: 1em 4em 1em 4em; width: 6em; height: 6em; border: 5px solid #f69393; border-radius: 50%;}
+.header-wrapper .cont-bar >p{position: absolute; top: 28%; left: -30%; width: 6em; font-size: 1.75em;font-family: 'Domine', serif; font-weight: 700; color: #50959e;}
 
-.header-wrapper .cont-bar:hover{position: absolute; width: 6em; height: 6em; border: 5px solid #f69393; background-color: #f69393; border-radius: 50%; transform: scale(1.5); transition: 0.5s;}
-.header-wrapper .cont-bar:hover >p{position: absolute; top: 0%; left: -35%; width: 9em; font-size: 1.75em;font-family: 'Playfair Display', serif; font-weight: 700; transform: rotateZ(-20deg);}
+.header-wrapper .cont-bar:hover{position: absolute; width: 6em; height: 6em; border: 5px solid #f69393; background-color: #f69393; border-radius: 50%; /* transform: scale(1.1); */transition: 0.5s; }
+.header-wrapper .cont-bar:hover>p{position: absolute; top: 0%; left: -37%; width: 9em; font-size: 1.75em;font-family: 'Domine', serif; font-weight: 700; transform: rotateZ(-20deg);}
 
+/* .menu-slide */
+.menu-slide{position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background-color: #ece3de; display: none;}
+.menu-slide .top-wrap{display: flex; justify-content: space-between; height: 180px; align-items: center; width: 100%;}
+.menu-slide .logo >img{width: 70px}
+.menu-slide .top-wrap .menu > ul{width: 400px; font-size: 1.25em;}
+.menu-slide .top-wrap .menu .bar{display: flex; justify-content: center; align-items: center; } 
+.menu-slide .top-wrap .menu .bar .bar-txt{margin-right: 15px; font-family: 'Domine', serif; font-size: 1.25em;font-weight: 700; color: #292929; }
+.menu-slide .top-wrap .menu .bar >ul{display: flex; flex-direction: column; justify-content: right;}
+.menu-slide .top-wrap .menu .bar >ul .s1{width: 30px; border-bottom: 3px solid #292929; margin-bottom: 7px; }
+.menu-slide .top-wrap .menu .bar >ul .s2{ width: 15px; border-bottom: 3px solid #292929;}
+.menu-slide .top-wrap .menu .bar:hover >ul .s2{ width: 30px; border-bottom: 3px solid #292929; transition: 0.3s;}
 
+.menu-slide .nav {width: 100%; height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Halant', serif; }
+.menu-slide .nav > .navs{width: 3.5em; height: 1.25em; overflow: hidden; font-size: 9em; font-weight: 700;  -webkit-text-fill-color: transparent; -webkit-text-stroke-width: 2px;
+  transition: 0.3s;}
+.menu-slide .nav > .navs:hover{transform: translateY(-45px);
+  -webkit-text-fill-color: #304345;}
 
 /* typing */
 .typing-txt{width: 100px; height: 100px; display: none; color: #f69393;}
@@ -62,7 +80,7 @@ html, body {width: 100%;}
   50%{border-right: 1px solid #000} 
   100%{border-right: 1px solid #fff} 
 }
-
+.header-wrapper .cont-bar{ transform:translateX(calc(var(--mouse-x) * 0.1px))translateY(calc(var(--mouse-y) * 0.1px));}
 
 
 
