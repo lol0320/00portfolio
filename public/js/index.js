@@ -1,8 +1,7 @@
-
 var now = 0;
 var delta;
 var wid = $(window).width();
-var scroll = 60;
+var scroll = 100;
 var hancan = 1/(wid/scroll);
 
 function onWheel(e) {
@@ -20,16 +19,17 @@ function onWheel(e) {
 		deltaX +=  scroll;
 		ani('slow');
 	}
-	else if(delta < 0 && now > 1 && now <= 2) {
+	else if(delta < 0 && now > 1 && now < 2) {
 		now=now-hancan
 		deltaX -= scroll;
 		ani('slow');
 	}
-	else if(delta > 0 && now > 1){
-		now= Math.floor(now +1);
-		ani('fast');
+
+	else if(delta > -1 && now >= 1){
+		now=now+hancan
+		ani('slow');
 	}
-	else if(delta > 0 && now > 1){
+	else if(delta > 0 && now >=-1){
 		now--;
 		ani('fast');
 	}
@@ -39,26 +39,16 @@ var deltaX = 0;
 function ani(speed) {
 	
 	console.log(delta,deltaX,now);
-	if(speed == 'fast')	$(".main-wrapper").stop().animate({"left": -(now*wid)+ "px"} , 800);
+	if(speed == 'fast')	$(".main-wrapper").stop().animate({"left": -(now*wid)+ "px"} , 1000);
 	if(speed == 'slow')	{
 		$(".main-wrapper").stop().css({"left": -wid-deltaX+ "px"});
 }}
 
 $(window).on('wheel', onWheel);
 
-/*
-function scrollHoriz() {
-  $('html, body, *').off('mousewheel').mousewheel(function(e, delta) {
-    this.scrollLeft -= (delta * 40);
-    e.preventDefault();
-    scrollLeft=this.scrollLeft
-    setTimeout(function() {
-      if (scrollLeft == 0) scrollVert();
-    }, 0)
-  });
-} 
 
-*/
+
+
 var typingBool = false; 
 var typingIdx=0; 
 var liIndex = 0;
@@ -69,7 +59,7 @@ var typingTxt = $(".typing-txt").eq(liIndex).text();
 typingTxt=typingTxt.split(""); 
 if(typingBool==false){ 
     typingBool=true; 
-    var tyInt = setInterval(typing,400); 
+    var tyInt = setInterval(typing,300); 
 } 
      
 function typing(){ 
@@ -90,11 +80,10 @@ function typing(){
          clearInterval(tyInt);
          setTimeout(function(){
             $(".typing").html('');
-           tyInt = setInterval(typing,400);
-         },2000);
+           tyInt = setInterval(typing,300);
+         },1000);
     } 
 }  
-
 
 var docStyle = document.documentElement.style;
 
@@ -109,3 +98,8 @@ $(".header-wrapper .bar").click(function () {
 
 $(".menu-slide .bar").click(function () {
 	$(".menu-slide").fadeOut(500)});
+
+
+
+$(".header-wrapper .cont").click(function () {
+	$(".about-wrapper").fadeIn(500)});
